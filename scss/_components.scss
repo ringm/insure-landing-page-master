@@ -1,3 +1,44 @@
+.nav {
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 1.6rem;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+}
+
+.sm-list {
+  display: flex;
+}
+
+.header {
+
+  &__img {
+
+    @media (min-width: 650px) {
+      order: 10;
+      margin-left: 5rem;
+    }
+  }
+
+  &__data {
+    margin-left: 0 !important;
+  }
+}
+
+
+
 .attribution {
   font-size: 11px;
   text-align: center;

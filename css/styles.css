@@ -80,13 +80,45 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   flex: 1;
 }
 @media (min-width: 650px) {
+  .col {
+    align-items: flex-start;
+    text-align: left;
+  }
   .col + .col {
     margin-left: 5rem;
   }
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+.nav .logo {
+  height: 1.6rem;
+}
+.nav__list {
+  display: flex;
+}
+.nav__list-item:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.sm-list {
+  display: flex;
+}
+
+@media (min-width: 650px) {
+  .header__img {
+    order: 10;
+    margin-left: 5rem;
+  }
+}
+.header__data {
+  margin-left: 0 !important;
 }
 
 .attribution {
