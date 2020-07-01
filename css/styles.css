@@ -56,6 +56,32 @@ h1,
 h2,
 h3 {
   font-family: "DM Serif Display", serif;
+  color: #2b272f;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+a {
+  text-transform: uppercase;
 }
 
 .container {
@@ -82,6 +108,7 @@ h3 {
   align-items: center;
   text-align: center;
   flex: 1;
+  margin-bottom: 5em;
 }
 @media (min-width: 650px) {
   .col {
@@ -91,6 +118,9 @@ h3 {
   .col + .col {
     margin-left: 5rem;
   }
+}
+.col > *:not(:last-child) {
+  margin-bottom: 3rem;
 }
 
 .nav .container {
@@ -111,14 +141,79 @@ h3 {
   display: flex;
 }
 
+.header__title {
+  color: #fff;
+}
+.header__img {
+  margin-bottom: 0;
+  width: 100%;
+}
+.header__img img {
+  width: 100%;
+}
 @media (min-width: 650px) {
   .header__img {
     order: 10;
     margin-left: 5rem;
   }
 }
+.header__bg {
+  background-color: #2d2640;
+  background-image: url(../images/bg-pattern-intro-left-mobile.svg), url(../images/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom -150px right;
+  color: #fafafa;
+}
 .header__data {
-  margin-left: 0 !important;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.sec-content {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+.sec-content__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.sec-content__title::before {
+  content: "";
+  display: block;
+  text-align: center;
+  width: 60%;
+  height: 1px;
+  background-color: #837d87;
+  margin-bottom: 4rem;
+}
+
+.thrd-content {
+  background-color: #2d2640;
+  background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: #fafafa;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thrd-content__title {
+  color: inherit;
+  margin-bottom: 3rem;
+}
+
+.card__txt {
+  color: #2b272f;
+}
+
+.btn {
+  border: 2px solid #fff;
+  font-size: 1.8rem;
+  color: inherit;
+  padding: 1.2em 3em;
 }
 
 .attribution {
@@ -128,4 +223,21 @@ h3 {
 
 .attribution a {
   color: #3e52a3;
+}
+
+.footer {
+  color: #2b272f;
+}
+.footer__title {
+  text-transform: uppercase;
+  color: #837d87;
+}
+.footer__list-item {
+  font-weight: 700;
+}
+.footer__list-item:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.footer__link {
+  color: inherit;
 }
