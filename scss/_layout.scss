@@ -21,6 +21,7 @@
   align-items: center;
   text-align: center;
   flex: 1;
+  margin-bottom: 5em;
 
   @media (min-width: 650px) {
     align-items: flex-start;
@@ -29,6 +30,10 @@
     &+& {
       margin-left: 5rem;
     }
+  }
+
+  & > *:not(:last-child) {
+    margin-bottom: 3rem;
   }
 
 }
