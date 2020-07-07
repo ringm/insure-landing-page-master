@@ -6,4 +6,46 @@ h1,
 h2,
 h3 {
   font-family: 'DM Serif Display', serif;
+  line-height: 1;
+  color: $very-dark-violet;
+  text-align: center;
+
+  @media (min-width: 650px) {
+    text-align: left;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: $dark-grayish-violet;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: $very-dark-violet;
+  text-align: center;
+
+  @media (min-width: 650px) {
+    text-align: left;
+  }
+}
+
+a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
 }

@@ -18,25 +18,26 @@
 <body>
 
   <nav class="nav">
-    <div class="container">
-      <img src="images/logo.svg" alt="company logo" class="logo">
-      <ul class="nav__list">
-        <li class="nav__list-item"><a href="#" class="nav__link">How we work</a></li>
-        <li class="nav__list-item"><a href="#" class="nav__link">Blog</a></li>
-        <li class="nav__list-item"><a href="#" class="nav__link">Account</a></li>
-        <li class="nav__list-item"><a href="#" class="nav__link">View plans</a></li>
-      </ul>
+    <div class="row container">
+      <div class="col">
+        <img src="images/logo.svg" alt="company logo" class="logo">
+      </div>
+      <div class="col">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#" class="nav__link">How we work</a></li>
+          <li class="nav__list-item"><a href="#" class="nav__link">Blog</a></li>
+          <li class="nav__list-item"><a href="#" class="nav__link">Account</a></li>
+          <li class="nav__list-item"><a href="#" class="nav__link">View plans</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <header class="header">
-    <div class="row">
-      <picture class="header__img col">
-        <source media="(min-width:650px)" srcset="images/image-intro-desktop.jpg">
-        <img src="images/image-intro-mobile.jpg" alt="header image">
-      </picture>
-      <div class="header__bg">
-        <div class="header__data col container">
+  <header class="header bg-color">
+      <div class="col">
+        <img class="header__img" src="images/image-intro-desktop.jpg" alt="header image">
+      </div>
+      <div class="col">
           <h1 class="header__title">
             Humanizing your insurance.
           </h1>
@@ -45,71 +46,85 @@
             and technology to help you find the plan that’s right for you. Ensure you
             and your loved ones are protected.
           </p>
-          <a href="#" class="btn">View plans</a>
-        </div>
+          <a href="#" class="btn btn--white">View plans</a>
       </div>
-    </div>
   </header>
 
-  <section class="sec-content container">
-    <h2 class="sec-content__title">
-      We’re different
-    </h2>
-    <div class="row">
-      <div class="card col">
-        <img src="images/icon-snappy-process.svg" alt="snappy process icon" class="card__img">
-        <h3 class="card__title">
-          Snappy Process
-        </h3>
-        <p class="card__txt">
-          Our application process can be completed in minutes, not hours. Don’t get
-          stuck filling in tedious forms.
-        </p>
+  <section class="sec-content">
+    <div class="row container">
+      <h2 class="sec-content__title">
+        We’re different
+      </h2>
+    </div>
+    <div class="row container">
+      <div class="col">
+        <div class="card">
+          <img src="images/icon-snappy-process.svg" alt="snappy process icon" class="card__img">
+          <h3 class="card__title">
+            Snappy Process
+          </h3>
+          <p class="card__txt">
+            Our application process can be completed in minutes, not hours. Don’t get
+            stuck filling in tedious forms.
+          </p>
+        </div>
       </div>
-      <div class="card col">
-        <img src="images/icon-affordable-prices.svg" alt="saffordable prices icon" class="card__img">
-        <h3 class="card__title">
-          Affordable Prices
-        </h3>
-        <p class="card__txt">
-          We don’t want you worrying about high monthly costs. Our prices may be low,
-          but we still offer the best coverage possible.
-        </p>
+      <div class="col">
+        <div class="card">
+          <img src="images/icon-affordable-prices.svg" alt="saffordable prices icon" class="card__img">
+          <h3 class="card__title">
+            Affordable Prices
+          </h3>
+          <p class="card__txt">
+            We don’t want you worrying about high monthly costs. Our prices may be low,
+            but we still offer the best coverage possible.
+          </p>
+        </div>
       </div>
-      <div class="card col">
-        <img src="images/icon-people-first.svg" alt="people first icon" class="card__img">
-        <h3 class="card__title">
-          People First
-        </h3>
-        <p class="card__txt">
-          Our plans aren’t full of conditions and clauses to prevent payouts. We make
-          sure you’re covered when you need it.
-        </p>
+      <div class="col">
+        <div class="card">
+          <img src="images/icon-people-first.svg" alt="people first icon" class="card__img">
+          <h3 class="card__title">
+            People First
+          </h3>
+          <p class="card__txt">
+            Our plans aren’t full of conditions and clauses to prevent payouts. We make
+            sure you’re covered when you need it.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="thrd-content container">
-    <h2 class="thrd-content__title">
-      Find out more about how we work
-    </h2>
-    <a href="#" class="btn">How we work</a>
+  <section class="thrd-content container bg-color">
+    <div class="row">
+      <div class="col">
+        <h2 class="thrd-content__title">
+          Find out more about how we work
+        </h2>
+        <a href="#" class="btn">How we work</a>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <img src="images/logo.svg" alt="company logo" class="logo">
-        <ul class="sm-list">
-          <li class="sm-list__item"><a href="#" class="sm-list__link"><img src="images/icon-facebook.svg"
-                alt="facebook icon" class="sm-list__icon"></a></li>
-          <li class="sm-list__item"><a href="#" class="sm-list__link"><img src="images/icon-twitter.svg"
-                alt="twitter icon" class="sm-list__icon"></a></li>
-          <li class="sm-list__item"><a href="#" class="sm-list__link"><img src="images/icon-pinterest.svg"
-                alt="pinterest icon" class="sm-list__icon"></a></li>
-          <li class="sm-list__item"><a href="#" class="sm-list__link"><img src="images/icon-instagram.svg"
-                alt="instagram icon" class="sm-list__icon"></a></li>
-        </ul>
+        <div class="col">
+          <img src="images/logo.svg" alt="company logo" class="logo">
+        </div>
+        <div class="col">
+          <ul class="sm-list">
+            <li class="sm-list__item"><a href="#" class="sm-list__link"><img src="images/icon-facebook.svg"
+                  alt="facebook icon" class="sm-list__icon"></a></li>
+            <li class="sm-list__item"><a href="#" class="sm-list__link"><img src="images/icon-twitter.svg"
+                  alt="twitter icon" class="sm-list__icon"></a></li>
+            <li class="sm-list__item"><a href="#" class="sm-list__link"><img src="images/icon-pinterest.svg"
+                  alt="pinterest icon" class="sm-list__icon"></a></li>
+            <li class="sm-list__item"><a href="#" class="sm-list__link"><img src="images/icon-instagram.svg"
+                  alt="instagram icon" class="sm-list__icon"></a></li>
+          </ul>
+        </div>
       </div>
       <div class="row">
         <div class="col">

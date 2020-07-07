@@ -1,0 +1,15 @@
+.bg-color {
+  background-color: $dark-violet;
+  color: $white;
+
+  & * {
+    color: inherit;
+  }
+}
+
+.r-reverse {
+  @media (min-width: 650px) {
+
+    flex-direction: row-reverse !important;
+  }
+}
