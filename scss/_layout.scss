@@ -24,6 +24,7 @@
 
   @media (min-width: 850px) {
     margin-left: 5rem;
+    margin-top: 0;
   }
 }
 
@@ -51,5 +52,22 @@
 }
 
 .header .col+.col {
-  margin-left: 0;
+  margin: 0;
+
+  @media (min-width: 850px) {
+    margin-right: 5rem;
+  }
+}
+
+/*FOOTER
+---------------------------------------*/
+
+.footer .col {
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: 850px) {
+    align-items: flex-start;
+    text-align: left;
+  }
 }
