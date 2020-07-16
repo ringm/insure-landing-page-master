@@ -19,6 +19,19 @@
   <nav class="nav">
     <div class="row container">
       <img src="images/logo.svg" alt="company logo" class="logo">
+      <div class="hamburger">
+        <input type="checkbox" class="hamburger__checkbox" id='hamburger-toggle'>
+        <label for="hamburger-toggle" class="hamburger__icon"></label>
+
+        <div class="hamburger__nav">
+          <ul class="hamburger__list">
+            <li class="hamburger__list-item"><a href="#" class="hamburger__link">How we work</a></li>
+            <li class="hamburger__list-item"><a href="#" class="hamburger__link">Blog</a></li>
+            <li class="hamburger__list-item"><a href="#" class="hamburger__link">Account</a></li>
+            <li class="hamburger__list-item"><a href="#" class="hamburger__link">View plans</a></li>
+          </ul>
+        </div>
+      </div>
       <ul class="nav__list">
         <li class="nav__list-item"><a href="#" class="nav__link">How we work</a></li>
         <li class="nav__list-item"><a href="#" class="nav__link">Blog</a></li>
@@ -30,8 +43,11 @@
 
   <header class="header">
     <div class="row container">
-      <div class="col">
-        <img class="header__img" src="images/image-intro-desktop.jpg" alt="header image">
+      <div class="col header__img">
+        <picture>
+          <source media="(min-width:540px)" srcset="images/image-intro-desktop.jpg">
+          <img src="images/image-intro-mobile.jpg" alt="header image">
+        </picture>
       </div>
       <div class="col header__data">
           <h1 class="header__title">
